@@ -5,3 +5,5 @@ This is just the node which subscribe to the topic "camera_and_imu" and then pub
 Regions of Interest must be processed in function processRois(...)
 
 Based on catkin workspace!!!
+
+#Change the name from "roi_py" to "roi"
