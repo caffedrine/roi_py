@@ -4,6 +4,7 @@
 import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
+from sensor_msgs.msg import RegionOfInterest
 
 from roi.msg import sendMsg
 from roi.msg import recvMsg
@@ -11,6 +12,17 @@ from roi.msg import recvMsg
 def processRois(Image):
 	#For serey. The rois shall be returned here, this way:
 	#return 12, {} #number of regions and array of regions
+
+	#initialising values we have to append
+	regions_number = 0;
+	regions = [];
+	currentRegion = RegionOfInterest()
+
+	#process image
+
+
+	#return results
+	return regions_number, regions
 
 
 #Callback function - called everytime a new message is recieved
